@@ -1,0 +1,208 @@
+{"User": [
+		{
+			"username":"NguyenVanA",
+			"password":"12345",
+			"email":"nva@gmail.com",
+			"avatar":"nva.jpg",
+			"hoten":"Nguyễn Văn A",
+			"NgaySinh":"04/04/1994",
+			"trangthai":"0"
+		},
+		{
+			"username":"NguyenVanA",
+			"password":"12345",
+			"email":"nvb@gmail.com",
+			"avatar":"nvb.jpg",
+			"hoten":"Nguyễn Văn B",
+			"NgaySinh":"05/05/1995",
+			"trangthai":"0"
+		},
+		{
+			"username":"NguyenVanC",
+			"password":"12345",
+			"email":"nvc@gmail.com",
+			"avatar":"nvc.jpg",
+			"hoten":"Nguyễn Văn C",
+			"NgaySinh":"06/06/1996",
+			"trangthai":"0"
+		},
+		{
+			"username":"NguyenVanD",
+			"password":"12345",
+			"email":"nvd@gmail.com",
+			"avatar":"nvd.jpg",
+			"hoten":"Nguyễn Văn D",
+			"NgaySinh":"03/03/1993",
+			"trangthai":"0"
+		}
+],
+"Group": [
+		{
+			"id":"1",
+			"tenGroup":"Đồ Án",
+			"mota":"Group thảo luận làm đồ án môn học",
+			"thanhvien": [
+				{
+					"username":"NguyenVanA"
+				},
+				{
+					"username":"NguyenVanB"
+				},
+				{
+					"username":"NguyenVanC"
+				}
+			],
+			"Post": [
+				{
+					"id":"1",
+					"ten":"Họp nhóm lần 1",
+					"mota":"Họp nhóm lần đầu tiên",
+					"thanhvien":[
+						{
+							"username":"NguyenVanA"
+						},
+						{
+							"username":"NguyenVanB"
+						}
+					],
+					"comment":[
+					{
+						"username":"NguyenVanA",
+						"noidung":"Có ai bận gì không"
+					},
+					{
+						"username":"NguyenVanB",
+						"noidung":"không"
+					},
+					{
+						"username":"NguyenVanB",
+						"noidung":"Họp ngày 10/10/2016 nhé"
+					}
+					],
+					"trangthai":"1"
+				},
+				{
+					"id":"2",
+					"ten":"Họp nhóm lần 2",
+					"mota":"Họp nhóm thảo luận cách code một cách hợp lý",
+					"thanhvien":[
+						{
+							"username":"NguyenVanA"
+						},
+						{
+							"username":"NguyenVanB"
+						}
+					],
+					"comment":[
+						{
+							"username":"NguyenVanA",
+							"noidung":"Nhớ thứ 6 này!"
+						},
+						{
+							"username":"NguyenVanB",
+							"noidung":"ok"
+						}
+					],
+					"trangthai":"1"
+				}
+			]
+		},
+		{
+			"id":"2",
+			"tenGroup":"Serminar",
+			"mota":"Group thảo luận làm Serminar môn học",
+			"thanhvien": [
+				{
+					"username":"NguyenVanA"
+				},
+				{
+					"username":"NguyenVanB"
+				},
+				{
+					"username":"NguyenVanD"
+				}
+			],
+			"Post": [
+				{
+					"id":"1",
+					"ten":"Họp nhóm lần 1",
+					"mota":"Họp nhóm lần đầu tiên",
+					"thanhvien":[
+						{
+							"username":"NguyenVanB"
+						},
+						{
+							"username":"NguyenVanD"
+						}
+					],
+					"comment":[
+						{
+							"username":"NguyenVanB",
+							"noidung":"Sắp serminar rồi họp gấp"
+						},
+						{
+							"username":"NguyenVand",
+							"noidung":"ok"
+						}
+					],
+					"trangthai":"1"
+				}
+			]
+		},
+		
+],
+"Chat":[
+	{
+		"user1":"NguyenVanA",
+		"user2":"NguyenVanB",
+		"mesage":[
+			{
+				"username":"NguyenVanA",
+				"noidung":"Hello!"
+			},
+			{
+				"username":"NguyenVanB",
+				"noidung":"Hi!"
+			},
+			{
+				"username":"NguyenVanA",
+				"noidung":"What your name?!"
+			},
+			{
+				"username":"NguyenVanB",
+				"noidung":"My name is B!"
+			},
+			{
+				"username":"NguyenVanA",
+				"noidung":"goodbey!"
+			}
+		]
+	},
+	{
+		"user1":"NguyenVanA",
+		"user2":"NguyenVanD",
+		"mesage":[
+			{
+				"username":"NguyenVanA",
+				"noidung":"Chào Việt Nam!"
+			},
+			{
+				"username":"NguyenVanD",
+				"noidung":"uk!"
+			},
+			{
+				"username":"NguyenVanA",
+				"noidung":"Cái gì uk?!"
+			},
+			{
+				"username":"NguyenVanD",
+				"noidung":"ờ!"
+			},
+			{
+				"username":"NguyenVanA",
+				"noidung":"tạm biệt!"
+			}
+		]
+	}
+]
+ }
