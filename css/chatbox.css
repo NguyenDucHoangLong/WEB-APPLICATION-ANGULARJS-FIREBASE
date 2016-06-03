@@ -278,6 +278,17 @@
     height: 250px;
     overflow: auto;
 }
+
+.direct-chat-messages-large {
+    -webkit-transform: translate(0,  0);
+    -ms-transform: translate(0,  0);
+    -o-transform: translate(0,  0);
+    transform: translate(0,  0);
+    padding: 10px;
+    height: 475px;
+    overflow: auto;
+}
+
 .direct-chat-msg, .direct-chat-text {
     display: block;
 }

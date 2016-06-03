@@ -3,52 +3,26 @@
 <head>
 	<title></title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="css/chatbox.css" type="text/css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
 </head>
 <body>
-	<nav class="navbar navbar-default" role="navigation">
-		<div class="container-fluid">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#/">Title</a>
-			</div>
-	
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse navbar-ex1-collapse">
-				<ul class="nav navbar-nav">
-					<li><a href="#/">Home</a></li>
-					<li><a href="#/detail">Detail</a></li>
-				</ul>
-				<form class="navbar-form navbar-left" role="search">
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Search">
-					</div>
-					<button type="submit" class="btn btn-default">Submit</button>
-				</form>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Link</a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li><a href="#">Separated link</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div><!-- /.navbar-collapse -->
-		</div>
+	 <nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#/">WebSiteName</a>
+	    </div>
+	    <ul class="nav navbar-nav navbar-right">
+	      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+	      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	    </ul>
+	  </div>
 	</nav>
 	<div class="container">
 		<div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
@@ -65,7 +39,7 @@
 			</div>
 			<div class="col-sm-6 col-md-4 col-lg-3">
 				<div class="project-card">
-					<a href="#">
+					<a href="#/detail">
 						<div class="rect">
 							<p>ĐACK Web</p>
 						</div>
@@ -74,7 +48,7 @@
 			</div>
 			<div class="col-sm-6 col-md-4 col-lg-3">
 				<div class="project-card">
-					<a href="#">
+					<a href="#/detail">
 						<div class="rect">
 							<p>ĐACK Web</p>
 						</div>
@@ -83,7 +57,7 @@
 			</div>
 			<div class="col-sm-6 col-md-4 col-lg-3">
 				<div class="project-card">
-					<a href="#">
+					<a href="#/detail">
 						<div class="rect">
 							<p>ĐACK Web</p>
 						</div>
@@ -95,13 +69,56 @@
 				<div class="project-detail">
 					<div class="list-tasks col-sm-4 col-md-4 col-lg-4">
 						<ul>
-						  <li><a href="#/detail">Home</a></li>
-						  <li><a href="#/detail">News</a></li>
-						  <li><a href="#/detail">Contact</a></li>
-						  <li><a href="#/detail">About</a></li>
+						  <li><a href="#/detail">Task1</a></li>
+						  <li><a href="#/detail">Task2</a></li>
+						  <li><a href="#/detail">Task3</a></li>
+						  <li><a href="#/detail">Task4</a></li>
 						</ul>
 					</div>
 					<div class="content-tasks col-sm-8 col-md-8 col-lg-8">
+						<div class="box-body">
+				          <!-- Conversations are loaded here -->
+				          <div class="direct-chat-messages-large">
+				            <!-- Message. Default to the left -->
+				            <div class="direct-chat-msg">
+				              <div class="direct-chat-info clearfix">
+				                <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
+				              </div>
+				              <!-- /.direct-chat-info -->
+				              <img class="direct-chat-img" src="http://bootdey.com/img/Content/user_1.jpg" alt="Message User Image"><!-- /.direct-chat-img -->
+				              <div class="direct-chat-text">
+				                Is this template really for free? That's unbelievable!
+				              </div>
+				              <!-- /.direct-chat-text -->
+				            </div>
+				            <!-- /.direct-chat-msg -->
+				    
+				            <!-- Message to the right -->
+				            <div class="direct-chat-msg right">
+				              <div class="direct-chat-info clearfix">
+				                <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
+				              </div>
+				              <!-- /.direct-chat-info -->
+				              <img class="direct-chat-img" src="http://bootdey.com/img/Content/user_2.jpg" alt="Message User Image"><!-- /.direct-chat-img -->
+				              <div class="direct-chat-text">
+				                You better believe it!
+				              </div>
+				              <!-- /.direct-chat-text -->
+				            </div>
+				            <!-- /.direct-chat-msg -->
+				          </div>
+				          <!--/.direct-chat-messages-->
+				          <div class="box-footer">
+					          <form action="#" method="post">
+					            <div class="input-group">
+					              <input type="text" name="message" placeholder="Type Message ..." class="form-control">
+					                  <span class="input-group-btn">
+					                    <button type="submit" class="btn btn-primary btn-flat">Send</button>
+					                  </span>
+					            </div>
+					          </form>
+					        </div>
+				        </div>
 					</div>
 				</div>
 			</script>	
@@ -111,7 +128,13 @@
 		      <!-- DIRECT CHAT PRIMARY -->
 		      <div class="box box-primary direct-chat direct-chat-primary">
 		        <div class="box-header with-border">
-		          <h3 class="box-title">Direct Chat</h3>
+		          <h3 class="box-title">Alexandre</h3>
+		          <div class="box-tools pull-right">
+		            <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle">
+		              <i class="fa fa-comments"></i></button>
+		             <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+		            </button>
+		          </div>
 		        </div>
 		        <!-- /.box-header -->
 		        <div class="box-body">
@@ -120,7 +143,6 @@
 		            <!-- Message. Default to the left -->
 		            <div class="direct-chat-msg">
 		              <div class="direct-chat-info clearfix">
-		                <span class="direct-chat-name pull-left">Alexander Pierce</span>
 		                <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
 		              </div>
 		              <!-- /.direct-chat-info -->
@@ -135,7 +157,6 @@
 		            <!-- Message to the right -->
 		            <div class="direct-chat-msg right">
 		              <div class="direct-chat-info clearfix">
-		                <span class="direct-chat-name pull-right">Sarah Bullock</span>
 		                <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
 		              </div>
 		              <!-- /.direct-chat-info -->
@@ -148,31 +169,8 @@
 		            <!-- /.direct-chat-msg -->
 		          </div>
 		          <!--/.direct-chat-messages-->
-		    
-		          <!-- Contacts are loaded here -->
-		          <div class="direct-chat-contacts">
-		            <ul class="contacts-list">
-		              <li>
-		                <a href="#">
-		                  <img class="contacts-list-img" src="http://bootdey.com/img/Content/user_1.jpg">
-		    
-		                  <div class="contacts-list-info">
-		                        <span class="contacts-list-name">
-		                          Count Dracula
-		                          <small class="contacts-list-date pull-right">2/28/2015</small>
-		                        </span>
-		                    <span class="contacts-list-msg">How have you been? I was...</span>
-		                  </div>
-		                  <!-- /.contacts-list-info -->
-		                </a>
-		              </li>
-		              <!-- End Contact Item -->
-		            </ul>
-		            <!-- /.contatcts-list -->
-		          </div>
-		          <!-- /.direct-chat-pane -->
 		        </div>
-		        <!-- /.box-body -->
+		        <!-- /.box-footer -->
 		        <div class="box-footer">
 		          <form action="#" method="post">
 		            <div class="input-group">
