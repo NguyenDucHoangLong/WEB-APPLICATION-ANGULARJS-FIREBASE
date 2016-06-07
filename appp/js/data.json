@@ -1,0 +1,167 @@
+{
+  "Chat" : [ {
+    "mesage" : [ {
+      "noidung" : "Hello!",
+      "username" : "NguyenVanA"
+    }, {
+      "noidung" : "Hi!",
+      "username" : "NguyenVanB"
+    }, {
+      "noidung" : "What your name?!",
+      "username" : "NguyenVanA"
+    }, {
+      "noidung" : "My name is B!",
+      "username" : "NguyenVanB"
+    }, {
+      "noidung" : "goodbey!",
+      "username" : "NguyenVanA"
+    } ],
+    "user1" : "NguyenVanA",
+    "user2" : "NguyenVanB"
+  }, {
+    "mesage" : [ {
+      "noidung" : "Chào Việt Nam!",
+      "username" : "NguyenVanA"
+    }, {
+      "noidung" : "uk!",
+      "username" : "NguyenVanD"
+    }, {
+      "noidung" : "Cái gì uk?!",
+      "username" : "NguyenVanA"
+    }, {
+      "noidung" : "ờ!",
+      "username" : "NguyenVanD"
+    }, {
+      "noidung" : "tạm biệt!",
+      "username" : "NguyenVanA"
+    } ],
+    "user1" : "NguyenVanA",
+    "user2" : "NguyenVanD"
+  } ],
+  "Group" : [ {
+    "Post" : [ {
+      "comment" : [ {
+        "noidung" : "Có ai bận gì không",
+        "username" : "NguyenVanA"
+      }, {
+        "noidung" : "không",
+        "username" : "NguyenVanB"
+      }, {
+        "noidung" : "Họp ngày 10/10/2016 nhé",
+        "username" : "NguyenVanB"
+      } ],
+      "id" : "1",
+      "mota" : "Họp nhóm lần đầu tiên",
+      "ten" : "Họp nhóm lần 1",
+      "thanhvien" : [ {
+        "username" : "NguyenVanA"
+      }, {
+        "username" : "NguyenVanB"
+      } ],
+      "trangthai" : "1"
+    }, {
+      "comment" : [ {
+        "noidung" : "Nhớ thứ 6 này!",
+        "username" : "NguyenVanA"
+      }, {
+        "noidung" : "ok",
+        "username" : "NguyenVanB"
+      } ],
+      "id" : "2",
+      "mota" : "Họp nhóm thảo luận cách code một cách hợp lý",
+      "ten" : "Họp nhóm lần 2",
+      "thanhvien" : [ {
+        "username" : "NguyenVanA"
+      }, {
+        "username" : "NguyenVanB"
+      } ],
+      "trangthai" : "1"
+    } ],
+    "id" : "1",
+    "mota" : "Group thảo luận làm đồ án môn học",
+    "tenGroup" : "Đồ Án",
+    "thanhvien" : [ {
+      "username" : "NguyenVanA"
+    }, {
+      "username" : "NguyenVanB"
+    }, {
+      "username" : "NguyenVanC"
+    } ]
+  }, {
+    "Post" : [ {
+      "comment" : [ {
+        "noidung" : "Sắp serminar rồi họp gấp",
+        "username" : "NguyenVanB"
+      }, {
+        "noidung" : "ok",
+        "username" : "NguyenVand"
+      } ],
+      "id" : "1",
+      "mota" : "Họp nhóm lần đầu tiên",
+      "ten" : "Họp nhóm lần 1",
+      "thanhvien" : [ {
+        "username" : "NguyenVanB"
+      }, {
+        "username" : "NguyenVanD"
+      } ],
+      "trangthai" : "1"
+    } ],
+    "id" : "2",
+    "mota" : "Group thảo luận làm Serminar môn học",
+    "tenGroup" : "Serminar",
+    "thanhvien" : [ {
+      "username" : "NguyenVanA"
+    }, {
+      "username" : "NguyenVanB"
+    }, {
+      "username" : "NguyenVanD"
+    } ]
+  } ],
+  "User" : {
+    "0" : {
+      "NgaySinh" : "04/04/1994",
+      "avatar" : "nva.jpg",
+      "email" : "nva@gmail.com",
+      "hoten" : "Nguyễn Văn A",
+      "password" : "12345",
+      "trangthai" : "0",
+      "username" : "NguyenVanA"
+    },
+    "1" : {
+      "NgaySinh" : "05/05/1995",
+      "avatar" : "nvb.jpg",
+      "email" : "nvb@gmail.com",
+      "hoten" : "Nguyễn Văn B",
+      "password" : "12345",
+      "trangthai" : "0",
+      "username" : "NguyenVanA"
+    },
+    "2" : {
+      "NgaySinh" : "06/06/1996",
+      "avatar" : "nvc.jpg",
+      "email" : "nvc@gmail.com",
+      "hoten" : "Nguyễn Văn C",
+      "password" : "12345",
+      "trangthai" : "0",
+      "username" : "NguyenVanC"
+    },
+    "3" : {
+      "NgaySinh" : "03/03/1993",
+      "avatar" : "nvd.jpg",
+      "email" : "nvd@gmail.com",
+      "hoten" : "Nguyễn Văn D",
+      "password" : "12345",
+      "trangthai" : "0",
+      "username" : "NguyenVanD"
+    },
+    "-KJaG98RYq61scX9MTlG" : {
+      "avatar" : "",
+      "email" : "Long@gmail.com",
+      "hoten" : "Long",
+      "ngaysinh" : "2016-06-09",
+      "password" : "12345",
+      "trangthai" : "0",
+      "username" : "Long"
+    }
+  }
+}

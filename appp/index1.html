@@ -1,0 +1,118 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!DOCTYPE html>
+<html>
+
+</body>
+<head>
+<title>1212255_10 Đinh Trọng Nghĩa _ Bài tập giữa kỳ angularjs</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+<!-- Firebase -->
+<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+<link rel="stylesheet" type="text/css" href="css/style55.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+</head>
+<body>
+<!-- <div ng-app="giuaky" ng-controller="dataController"> -->
+<div ng-app="giuaky"  ng-controller="dataCtrl">
+  <div class="container">
+  <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+    <div class="row top">
+      <div class="col-md-4">
+        <a href="https://www.linkedin.com/">Linded</a> 
+      </div>
+    </div>
+    
+    <div class="row noidung">
+      <b>Group</b>
+      <p></p>
+        <!-- <script type="text/ng-template" id="pages/home.html"> -->
+        <div ng-repeat="g in myGroup">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="project-card">
+                    <a href="#/detail">
+                        <div class="rect">
+                            <p>{{g.tenGroup}}</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <!-- </script> -->
+
+      <div class="col-md-12">
+      <button class="w3-btn w3-green w3-ripple" ng-click="showAddExp()">&#9998;Add</button>
+      <form ng-hide="hideformg">
+        <!-- <h3 ng-show="edit">Add new</h3> -->
+        <!-- <h3 ng-hide="edit">Edit</h3> -->
+                <h3>Add new</h3>
+        <lable>Tên Group:</lable>
+        <input class="w3-input w3-border" type="text" ng-model="ftengroup" placeholder="Tên Group">
+        </br>
+        <!-- ng-disabled="!edit" -->
+        <lable>Mô tả:</lable>
+        <input class="w3-input w3-border" type="text" ng-model="fmota" placeholder="Mô tả">
+        </br>
+        <lable>ID:</lable>
+        <input class="w3-input w3-border" type="text" ng-model="fid" placeholder="ID">
+        </br>
+        <button ng-click="addExp()" class="w3-btn w3-green w3-ripple" >&#10004; Save Changes</button>
+      </form>
+      </div>
+
+    </div>
+    
+    <div class="row">
+      Linkedin @ 2016
+    </div>
+
+  </div>
+</div>
+<script>
+
+  var app = angular.module('giuaky', ["firebase"]);
+  app.controller('dataCtrl', function($scope, $firebaseArray) {
+    var gfire = new Firebase("https://dackntl.firebaseio.com/Group");
+        $scope.myGroup = $firebaseArray(gfire);
+        $scope.hideformEditg = true;
+        $scope.hideformg = true;
+        $scope.editExp = function (id) {
+            $scope.hideformEditExp = false;
+            // $scope.ftengroup = $scope.myGroup[id].tenGroup;
+            // $scope.fmota = $scope.myExpirience[id].mota;
+            // $scope.fid = $scope.myExpirience[id].id;
+            // $scope.idg = id;
+        }
+        $scope.addEditExp = function () {
+            $scope.hideformEditExp = true;
+            // gfire.child($scope.idg).set({ tenGroup: $scope.ftengroup, mota: $scope.fmota, id: $scope.fid });
+            }
+        $scope.showAddExp = function () {
+            $scope.hideformExp = false;
+        }
+
+        $scope.addExp = function () {
+            var newMessageRef = gfire.push();
+            newMessageRef.set({ tenGroup: $scope.ftengroup, mota: $scope.fmota, id: $scope.fid });
+            $scope.hideformExp = true;
+        }
+  });
+</script>
+<script src="js/app.js"></script>
+</body>
+</html>
