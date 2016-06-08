@@ -1,31 +1,83 @@
 [
 	{
-		"id": 1,
+		"id": 0,
 		"projectName": "Đồ án cuối kì",
 		"tasks": 
 		[
 			{
+				"taskId": 0,
 				"taskName": "Thiết kế giao diện",
-				"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+				"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+				"discuss":
+				[
+					{
+						"userName": "Nguyễn Văn A",
+						"text": "Hello everyone"
+					},
+					{
+						"userName": "Nguyễn Thị B",
+						"text": "Hi A"
+					}
+				]
 			},
 			{
+				"taskId": 1,
 				"taskName": "Tạo cơ sở dữ liệu",
-				"description": "Mô tả database json"
+				"description": "Mô tả database json",
+				"discuss":
+				[
+					{
+						"userName": "Trần Văn C",
+						"text": "Thứ 7 này tập trung ở trường làm tiếp nha"
+					},
+					{
+						"userName": "Nguyễn Thị D",
+						"text": "Ok. :)))"
+					},
+					{
+						"userName": "Tạ Quang H",
+						"text": "Yes sir. :)))"
+					}
+				]
 			}
 		]
 	},
 	{
-		"id": 2,
-		"projectName": "Đồ án giữa kì",
+		"id": 0,
+		"projectName": "LinkedIn Project",
 		"tasks": 
 		[
 			{
+				"taskId": 0,
 				"taskName": "Thiết kế giao diện 2",
-				"description": "Mô tả giao diện 2"
+				"description": "Mô tả giao diện 2",
+				"discuss":
+				[
+					{
+						"userName": "Trần Văn C",
+						"text": "Good night :)))"
+					},
+					{
+						"userName": "Nguyễn Thị D",
+						"text": "You too"
+					}
+				]
 			},
 			{
+				"taskId": 1,
 				"taskName": "Tạo cơ sở dữ liệu 2",
-				"description": "Mô tả database 2"
+				"description": "Mô tả database 2",
+				"discuss":
+				[
+					{
+						"userName": "Trần Văn C",
+						"text": "Hello everyone"
+					},
+					{
+						"userName": "Nguyễn Thị D",
+						"text": "Hi A"
+					}
+				]
 			}
 		]
 	}

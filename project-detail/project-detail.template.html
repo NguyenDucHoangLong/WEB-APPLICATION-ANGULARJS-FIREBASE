@@ -1,33 +1,23 @@
 <div class="project-detail">
 	<div class="list-tasks col-sm-4 col-md-4 col-lg-4">
-		<ul>
-			<li ng-repeat="task in $ctrl.project.tasks"><a href="#/detail">{{task.taskName}}</a></li>
-		</ul>
+		<!-- <ul>
+			<li ng-repeat="task in $ctrl.project.tasks"><a>{{task.taskName}}</a></li>
+		</ul> -->
+		<select ng-model="$ctrl.taskId" ng-options="task.taskId as task.taskName for task in $ctrl.project.tasks" multiple="true"></select>
+		<button class="add-task">Add Task</button>
 	</div>
 	<div class="content-tasks col-sm-8 col-md-8 col-lg-8">
 		<div class="box-header with-border">
-			<h3 class="box-title">{{$ctrl.project.tasks[0].taskName}}</h3>
-			<div class="task-description">{{$ctrl.project.tasks[0].description}}</div>
+			<h3 class="box-title">{{$ctrl.project.tasks[$ctrl.taskId].taskName}}</h3>
+			<div class="task-description">{{$ctrl.project.tasks[$ctrl.taskId].description}}</div>
 		</div>
 		<div class="box-body direct-chat-primary">
-			<div class="direct-chat-messages-large">
-			    <div class="direct-chat-msg">
+			<div class="direct-chat-messages">
+			    <div ng-repeat="message in $ctrl.project.tasks[$ctrl.taskId].discuss" class="direct-chat-msg">
 				    <div class="direct-chat-info clearfix">
-			            <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
+			            <span class="direct-chat-timestamp">{{message.userName}}</span>
 			        </div>
-				    <img class="direct-chat-img" src="http://bootdey.com/img/Content/user_1.jpg" alt="Message User Image">
-				    <div class="direct-chat-text">
-				    	Is this template really for free? That's unbelievable!
-				    </div>
-				</div>
-				<div class="direct-chat-msg right">
-				    <div class="direct-chat-info clearfix">
-				        <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
-				    </div>
-					<img class="direct-chat-img" src="http://bootdey.com/img/Content/user_2.jpg" alt="Message User Image">
-					<div class="direct-chat-text">
-						You better believe it!
-					</div>
+				    <div class="direct-chat-text">{{message.text}}</div>
 				</div>
 			</div>
 		</div>
@@ -43,49 +33,3 @@
 		</div>  
     </div>
 </div>
-<!-- <div class="content-tasks col-sm-8 col-md-8 col-lg-8">
-		<div class="box-body direct-chat-primary">
-
-			<div class="direct-chat-messages-large">
-	          
-		    <div class="direct-chat-msg">
-			    <div class="direct-chat-info clearfix">
-		            <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
-		        </div>
-
-			    <img class="direct-chat-img" src="http://bootdey.com/img/Content/user_1.jpg" alt="Message User Image">
-			    <div class="direct-chat-text">
-			    Is this template really for free? That's unbelievable!
-			    </div>
-			    
-			</div>
-	
-		    
-			
-			<div class="direct-chat-msg right">
-			    <div class="direct-chat-info clearfix">
-			        <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
-			    </div>
-	
-				<img class="direct-chat-img" src="http://bootdey.com/img/Content/user_2.jpg" alt="Message User Image">
-				<div class="direct-chat-text">
-				You better believe it!
-				</div>
-				
-			</div>
-			
-			</div>
-		
-			<div class="box-footer">
-			    <form action="#" method="post">
-			        <div class="input-group">
-				        <input type="text" name="message" placeholder="Type Message ..." class="form-control">
-				        <span class="input-group-btn">
-					        <button type="submit" class="btn btn-primary btn-flat">Send</button>
-				        </span>
-				    </div>
-			    </form>
-			</div>
-		</div>  
-    </div>
-</div> -->

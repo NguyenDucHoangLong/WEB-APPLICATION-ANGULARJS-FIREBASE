@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
 <head>
-	<title></title>
+	<title>TeWoMa</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" >
-	<link rel="stylesheet" href="app.css">
+	<link rel="stylesheet" href="project-detail/project-detail.css">
+	<link rel="stylesheet" href="project-list/project-list.css">
 	<link rel="stylesheet" href="chat-box/chat-box.css">
 
 	<script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angularfire/dist/angularfire.js"></script>
+    <script src="bower_components/firebase/firebase.js"></script>
 
     <script src="app.module.js"></script>
 	<script src="app.config.js"></script>
+	<script src="logout/logout.js"></script>
    	<script src="project-list/project-list.component.js"></script>
     <script src="project-detail/project-detail.component.js"></script>
 
@@ -23,10 +27,10 @@
 	 <nav class="navbar navbar-inverse">
 	  <div class="container-fluid">
 	    <div class="navbar-header">
-	      <a class="navbar-brand" href="#/">WebSiteName</a>
+	      <a class="navbar-brand" href="#/">TEWOMA</a>
 	    </div>
 	    <ul class="nav navbar-nav navbar-right">
-	      <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+	      <li><a href="javascript:logout()"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
 	    </ul>
 	  </div>
 	</nav>

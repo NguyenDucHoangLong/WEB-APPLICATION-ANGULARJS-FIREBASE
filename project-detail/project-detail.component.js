@@ -8,7 +8,8 @@ angular.
 
 	        	$http.get('database/project.json').then(function(response) {
 	        	self.id = $routeParams.projectId;
-	          	self.project = response.data[self.id - 1];
+	          	self.project = response.data[self.id];
+	          	self.taskId = 0;
 	       	 	});
 	        }
 	    ]

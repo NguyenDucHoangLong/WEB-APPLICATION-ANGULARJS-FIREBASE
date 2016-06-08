@@ -1,0 +1,32 @@
+[
+	{
+		"id": 0,
+		"userName": "ndtrung",
+		"message":
+		[
+			{
+				"user": "ndtrung",
+				"text": "hello, how's going?"
+			},
+			{
+				"user": "ndhlong",
+				"text": "Thanks, nothing special"
+			}
+		]
+	},
+	{
+		"id": 1,
+		"userName": "dtnghia",
+		"message":
+		[
+			{
+				"user": "ndhlong",
+				"text": "Hey, what are you doing?"
+			},
+			{
+				"user": "dtnghia",
+				"text": "Deadline make me tired :(("
+			}
+		]
+	}
+]
