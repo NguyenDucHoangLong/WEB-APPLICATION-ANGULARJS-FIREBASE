@@ -1,8 +1,6 @@
 <div class="project-detail">
 	<div class="list-tasks col-sm-4 col-md-4 col-lg-4">
-		<!-- <ul>
-			<li ng-repeat="task in $ctrl.project.tasks"><a>{{task.taskName}}</a></li>
-		</ul> -->
+		<h2>{{$ctrl.project.projectName}}</h2>
 		<select ng-model="$ctrl.taskId" ng-options="task.taskId as task.taskName for task in $ctrl.project.tasks" multiple="true"></select>
 		<button class="add-task">Add Task</button>
 	</div>
@@ -22,14 +20,14 @@
 			</div>
 		</div>
 		<div class="box-footer">
-		    <form action="#" method="post">
-		        <div class="input-group">
-			        <input type="text" name="message" placeholder="Type Message ..." class="form-control">
+		    <form ng-submit="sendMessage()">
+			    <div class="input-group">
+			        <input type="text" ng-model="text" name="text" placeholder="Type Message ..." class="form-control"/>
 			        <span class="input-group-btn">
-				        <button type="submit" class="btn btn-primary btn-flat">Send</button>
+				    	<input type="submit" class="btn btn-primary btn-flat" value="Send" />
 			        </span>
 			    </div>
-		    </form>
+			</form>
 		</div>  
     </div>
 </div>

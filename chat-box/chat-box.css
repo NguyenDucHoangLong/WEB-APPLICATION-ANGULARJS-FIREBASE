@@ -172,6 +172,7 @@
     display: block;
     padding: 10px;
     position: relative;
+    font-size: 15px;
 }
 .box-header.with-border {
     border-bottom: 1px solid #f4f4f4;

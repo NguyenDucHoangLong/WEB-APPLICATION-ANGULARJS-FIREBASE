@@ -13,9 +13,10 @@
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angularfire/dist/angularfire.js"></script>
+    
     <script src="bower_components/firebase/firebase.js"></script>
-
+	<script src="bower_components/angularfire/dist/angularfire.js"></script>
+	
     <script src="app.module.js"></script>
 	<script src="app.config.js"></script>
 	<script src="logout/logout.js"></script>
@@ -27,10 +28,11 @@
 	 <nav class="navbar navbar-inverse">
 	  <div class="container-fluid">
 	    <div class="navbar-header">
-	      <a class="navbar-brand" href="#/">TEWOMA</a>
+	      	<a class="navbar-brand" href="#/">TEWOMA</a>
 	    </div>
 	    <ul class="nav navbar-nav navbar-right">
-	      <li><a href="javascript:logout()"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+			<li><a href="#">Xin chào, Nguyễn Đức Trung</a></li>
+	      	<li><a href="javascript:logout()"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
 	    </ul>
 	  </div>
 	</nav>
@@ -38,7 +40,7 @@
 		<div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
 			<div ng-view></div>
 		</div>
-		<div class="col-sm-4 col-md-3 col-lg-2">
+		<div ng-controller="ChatController" class="col-sm-4 col-md-3 col-lg-2">
 			<div ng-include="'chat-box/chat-box.html'"></div>     
 		</div>
 		<!-- </div> -->

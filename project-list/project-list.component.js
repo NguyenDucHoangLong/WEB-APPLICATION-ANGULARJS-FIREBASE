@@ -5,7 +5,7 @@ angular.
 		controller: ['$http',
 	      	function ProjectListController($http) {
 	        	var self = this;
-
+	        	
 	        	$http.get('database/project.json').then(function(response) {
 	          	self.projects = response.data;
 	       	 	});
