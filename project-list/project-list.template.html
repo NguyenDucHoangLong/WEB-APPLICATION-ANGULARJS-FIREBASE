@@ -7,3 +7,29 @@
 		</a>
 	</div>
 </div>
+<div style="clear: both; margin-left: 14px; width: 50%;">
+	<button type="button" class="btn btn-default" ng-click="bool = !bool" ng-show="!bool">Add</button>
+	<form ng-show="bool" ng-submit="addProject()">
+		<div class="input-group">
+		    <input type="text" ng-model="text" name="text" placeholder="Project name is..." class="form-control"/>
+			<span class="input-group-btn">
+			  	<input type="submit" class="btn btn-primary" ng-click="bool = !bool" value="Save"/>
+				<input type="button" class="btn btn-default" ng-click="bool = !bool" value="Cancel"/>
+			</span>
+		</div>
+	</form>
+	<!-- <form ng-show="bool" ng-submit="addProject()">
+		<div class="input-group" style="margin-bottom: 5px">
+			<input type="text" placeholder="Project name is..." ng-model="projectName">
+		</div>
+		<div class="buttons">
+		buttons to submit / cancel form
+			<span>
+				<button type="submit" class="btn btn-primary" ng-click="bool = !bool">Save</button>
+				<button type="button" class="btn btn-default" ng-click="bool = !bool">Cancel</button>
+			</span>
+		</div>
+	</form> -->
+</div>
+
+			

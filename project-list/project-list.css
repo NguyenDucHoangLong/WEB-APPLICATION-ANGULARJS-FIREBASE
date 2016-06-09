@@ -13,4 +13,11 @@
 	font-weight: 700;
 }
 
+.main button {
+	margin-top: 7px !important;
+}
 
+.main button:hover {
+	background-color: #3c8dbc !important;
+	color: white !important;
+}
